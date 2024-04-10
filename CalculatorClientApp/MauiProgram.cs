@@ -37,6 +37,7 @@ public static class MauiProgram
     public static MauiAppBuilder RegisterDataServices(this MauiAppBuilder builder)
     {
         builder.Services.AddSingleton<CalculatorWebAPIProxy>();
+        builder.Services.AddSingleton<MonkeyWebAPIProxy>();
         return builder;
     }
     public static MauiAppBuilder RegisterViewModels(this MauiAppBuilder builder)
